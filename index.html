@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Quiz Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+    <header class="header">
+      <h2>Quiz Web Dev</h2>
+      <div class="high-score-badge">
+        High Score: <span id="high-score-display">0</span>
+      </div>
+    </header>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section">
+      <p id="progress-text" class="progress-text"></p>
+      <h3 id="question-text" class="question"></h3>
+      
+      <!-- Container untuk Event Delegation -->
+      <div id="options-container" class="options-grid"></div>
+
+      <footer class="footer">
+        <span id="score-live-text">Skor: 0</span>
+        <button id="next-btn" class="btn-action hidden">Lanjut</button>
+      </footer>
+    </section>
+
+    <!-- Result Section -->
+    <section id="result-section" class="result-section hidden">
+      <h3>Quiz Selesai!</h3>
+      <p id="final-score-text"></p>
+      <button id="restart-btn" class="btn-action">Ulangi Quiz</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
